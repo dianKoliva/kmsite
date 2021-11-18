@@ -14,6 +14,11 @@
         </p>
         <button
           class="
+            transition
+            duration-500
+            ease-in-out
+            transform
+            hover:-translate-y-1 hover:scale-110
             bg-red
             mt-12
             px-4
@@ -21,6 +26,7 @@
             text-white text-tiny
             rounded-md
             focus:outline-none
+            onfocus:bg-green-700
           "
         >
           Contact Us
