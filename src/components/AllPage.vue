@@ -5,7 +5,7 @@
       <Nav></Nav>
     </div>
 
-    <div class="pt-28">
+    <div class="pt-20">
       <Home></Home>
     </div>
   </div>
