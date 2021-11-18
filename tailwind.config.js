@@ -13,6 +13,7 @@ module.exports = {
         light: '#9F616A',
         DEFAULT: '#591133',
         dark: '#772149',
+        lighter:'#F8F6F7',
       },
       black: colors.black,
       white: colors.white,
@@ -36,6 +37,8 @@ module.exports = {
     },
     backgroundImage: {
       'cic': "url('/circle.png')",
+      'back':"url('/back.png')",
+      'about':"url('/about.png')",
     }
   },
   variants: {
