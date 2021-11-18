@@ -1,18 +1,23 @@
 <template>
   <div class="holder">
-    <div class="logo"></div>
-    <div class="nav relative right-0">
+    <!-- <div class="">KM</div> -->
+    <div class="">
       <Nav></Nav>
+    </div>
+
+    <div class="pt-28">
+      <Home></Home>
     </div>
   </div>
 </template>
 
 <script>
 import Nav from "./Nav.vue";
+import Home from "./Home.vue";
 
 export default {
   name: "ALl",
-  components: { Nav },
+  components: { Nav, Home },
 };
 </script>
 
