@@ -14,6 +14,7 @@
     <div>
       <Services></Services>
     </div>
+    <!--
     <div>
       <Clients></Clients>
     </div>
@@ -21,6 +22,7 @@
       <ContactUs></ContactUs>
     </div>
     <div><Footer></Footer></div>
+    -->
   </div>
 </template>
 
