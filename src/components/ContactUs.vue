@@ -1,13 +1,13 @@
 <template>
   <div class="flex">
     <div class="w-1/2">
-      <img src="/contact" alt="" />
+      <img src="/contact.png" class="max-w-md" alt="" />
     </div>
 
     <div class="w-1/2">
       <p class="font-bold text-xl text-red text-center">CONTACT US</p>
 
-      <div class="inputs text-sm">
+      <div class="inputs text-sm ml-auto">
         <div class="mt-4">
           <p>Name</p>
           <input
