@@ -8,12 +8,23 @@ module.exports = {
       'display': ['Faster One', ],
        'body': ['"Open Sans"',],
     },
+    borderWidth: {
+      DEFAULT: '1px',
+      '0': '0',
+      '2': '1.2px',
+     '3': '3px',
+      '4': '4px',
+     '6': '6px',
+     '8': '8px',
+    },
     colors:{
       red: {
-        light: '#9F616A',
+        light: '#E9E0E4',
         DEFAULT: '#591133',
         dark: '#772149',
         lighter:'#F8F6F7',
+
+        
       },
       black: colors.black,
       white: colors.white,
