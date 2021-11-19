@@ -20,6 +20,7 @@
     <div>
       <ContactUs></ContactUs>
     </div>
+    <div><Footer></Footer></div>
   </div>
 </template>
 
@@ -30,10 +31,10 @@ import AboutUs from "./AboutUs.vue";
 import Services from "./Services.vue";
 import Clients from "./Clients.vue";
 import ContactUs from "./ContactUs.vue";
-
+import Footer from "./Footer.vue";
 export default {
   name: "ALl",
-  components: { Nav, Home, AboutUs, Services, Clients, ContactUs },
+  components: { Nav, Home, AboutUs, Services, Clients, ContactUs, Footer },
 };
 </script>
 

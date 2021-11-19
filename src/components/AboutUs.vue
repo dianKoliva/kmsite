@@ -1,5 +1,5 @@
 <template>
-  <div class="">
+  <div class="bg-back bg-cover bg-no-repeat">
     <div class="flex mt-10">
       <div class="w-1/2">
         <img src="/about.png" class="max-w-xs mt-10" alt="" />
