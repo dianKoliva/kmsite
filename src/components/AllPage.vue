@@ -22,9 +22,8 @@
     <div>
       <ContactUs></ContactUs>
     </div>
-    <!--
+
     <div><Footer></Footer></div>
-    -->
   </div>
 </template>
 

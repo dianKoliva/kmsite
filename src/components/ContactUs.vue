@@ -7,8 +7,8 @@
     <div class="w-1/2">
       <p class="font-bold text-xl text-red text-center pt-4">CONTACT US</p>
 
-      <div class="inputs text-sm ml-auto">
-        <div class="mt-4 mr-auto ml-auto">
+      <div class="inputs text-sm ml-44">
+        <div class="mt-4">
           <p>Name</p>
           <input
             type="text"
@@ -63,28 +63,28 @@
             "
           ></textarea>
         </div>
-        <button
-          class="
-            ml-auto
-            mr-auto
-            mt-4
-            hover:bg-red hover:text-white
-            text-xs
-            transition
-            duration-500
-            ease-in-out
-            transform
-            hover:-translate-y-1 hover:scale-110
-            bg-red-light
-            border-solid border-red border-2
-            py-2
-            px-14
-            rounded-md
-            focus:outline-none
-          "
-        >
-          Submit
-        </button>
+        <div class="ml-24">
+          <button
+            class="
+              mt-4
+              hover:bg-red hover:text-white
+              text-xs
+              transition
+              duration-500
+              ease-in-out
+              transform
+              hover:-translate-y-1 hover:scale-110
+              bg-red-light
+              border-solid border-red border-2
+              py-2
+              px-14
+              rounded-md
+              focus:outline-none
+            "
+          >
+            Submit
+          </button>
+        </div>
       </div>
     </div>
   </div>
