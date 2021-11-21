@@ -58,7 +58,7 @@
         </div>
       </div>
 
-      <div class="content-center">
+      <div class="content-center pb-4">
         <input type="radio" @change="onChange(1)" name="change" id="" />
 
         <input
