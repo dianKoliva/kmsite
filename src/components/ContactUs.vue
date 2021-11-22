@@ -13,6 +13,7 @@
           <input
             type="text"
             spellcheck="false"
+            v-model="name"
             class="
               border-solid border-2 border-red
               rounded-md
@@ -32,6 +33,7 @@
           <input
             type="text"
             spellcheck="false"
+            v-model="email"
             class="
               border-solid border-2 border-red
               rounded-md
@@ -49,6 +51,7 @@
         <div class="mt-4">
           <p>Message</p>
           <textarea
+            v-model="message"
             name=""
             class="
               border-solid border-2 border-red
@@ -81,6 +84,7 @@
               rounded-md
               focus:outline-none
             "
+            @click="submit"
           >
             Submit
           </button>
@@ -91,7 +95,21 @@
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      name: "",
+      email: "",
+      message: "",
+    };
+  },
+
+  methods: {
+    submit() {
+      console.log(this.message);
+    },
+  },
+};
 </script>
 
 <style scoped>
