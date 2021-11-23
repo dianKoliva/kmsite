@@ -96,6 +96,7 @@
 
 <script>
 import axios from "axios";
+import validator from "email-validator";
 export default {
   data() {
     return {
@@ -105,13 +106,19 @@ export default {
       noName: false,
       noEmail: false,
       noMessage: false,
+      notEmail: false,
     };
   },
 
   methods: {
     submit() {
       let info = {};
-      if (this.name != "" && this.email != "" && this.message != "") {
+      if (
+        this.name != "" &&
+        this.email != "" &&
+        this.message != "" &&
+        !this.notEmail
+      ) {
         info = {
           name: this.name,
           email: this.email,
@@ -126,8 +133,13 @@ export default {
 
       if (this.email == "") {
         this.noEmail = true;
-      } else {
+        this.notEmail = false;
+      } else if (!validator.validate(this.email)) {
+        this.notEmail = true;
         this.noName = false;
+      } else {
+        this.noEmail = false;
+        this.notEmail = false;
       }
 
       if (this.message == "") {
