@@ -8,6 +8,7 @@
       <p class="font-bold text-xl text-red text-center pt-4">CONTACT US</p>
 
       <div class="inputs text-sm ml-44">
+        <p>Name required</p>
         <div class="mt-4">
           <p>Name</p>
           <input
@@ -28,6 +29,8 @@
           />
         </div>
 
+        <p>Email needed</p>
+        <p>Invalid email</p>
         <div class="mt-4">
           <p>Email</p>
           <input
@@ -47,7 +50,7 @@
             "
           />
         </div>
-
+        <p v-if="noMessage" class="text-red">Message needed</p>
         <div class="mt-4">
           <p>Message</p>
           <textarea
