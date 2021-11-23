@@ -34,7 +34,7 @@
             Phone number needed
           </p>
 
-          <p>Phone Number</p>
+          <p>Phone number</p>
           <input
             type="text"
             spellcheck="false"
@@ -112,24 +112,26 @@ export default {
       noName: false,
       noEmail: false,
       noMessage: false,
-      notEmail: true,
     };
   },
 
   methods: {
     submit() {
       let info = {};
-      if (
-        this.name != "" &&
-        this.email != "" &&
-        this.message != "" &&
-        !this.notEmail
-      ) {
+      if (this.name != "" && this.email != "" && this.message != "") {
         info = {
           name: this.name,
           number: this.email,
           message: this.message,
         };
+        axios
+          .post("http://localhost:4000/send/email", info)
+          .then((res) => {
+            console.log(res);
+          })
+          .catch((err) => {
+            console.log(err);
+          });
       }
       if (this.name == "") {
         this.noName = true;
