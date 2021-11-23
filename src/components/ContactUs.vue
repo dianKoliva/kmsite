@@ -95,6 +95,7 @@
 </template>
 
 <script>
+import axios from "axios";
 export default {
   data() {
     return {
@@ -106,7 +107,12 @@ export default {
 
   methods: {
     submit() {
-      console.log(this.message);
+      const info = {
+        name: this.name,
+        email: this.email,
+        message: this.message,
+      };
+      axios.post("http://localhost:5000/send/email");
     },
   },
 };
