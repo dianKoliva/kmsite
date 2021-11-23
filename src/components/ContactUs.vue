@@ -113,7 +113,7 @@ export default {
         message: this.message,
       };
       axios
-        .post("http://localhost:5000/send/email", info)
+        .post("http://localhost:4000/send/email", info)
         .then((res) => {
           console.log(res);
         })
