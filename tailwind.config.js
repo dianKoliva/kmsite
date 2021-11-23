@@ -23,6 +23,7 @@ module.exports = {
         DEFAULT: '#591133',
         dark: '#772149',
         lighter:'#F8F6F7',
+        usual:colors.red
 
         
       },

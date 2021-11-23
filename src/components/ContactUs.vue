@@ -7,9 +7,9 @@
     <div class="w-1/2">
       <p class="font-bold text-xl text-red text-center pt-4">CONTACT US</p>
 
-      <div class="inputs text-sm ml-44">
-        <p>Name required</p>
+      <div class="inputs text-sm ml-32">
         <div class="mt-4">
+          <p v-if="noName" class="text-red-dark text-xs">Name required</p>
           <p>Name</p>
           <input
             type="text"
@@ -22,17 +22,19 @@
               mt-1
               h-8
               px-2
-              w-80
+              w-96
               text-xs
               py-2
             "
           />
         </div>
 
-        <p>Email needed</p>
-        <p>Invalid email</p>
         <div class="mt-4">
-          <p>Email</p>
+          <p v-if="noEmail" class="text-xs text-red-dark">
+            Phone number needed
+          </p>
+
+          <p>Phone Number</p>
           <input
             type="text"
             spellcheck="false"
@@ -45,13 +47,14 @@
               h-8
               px-2
               py-4
-              w-80
+              w-96
               text-xs
             "
           />
         </div>
-        <p v-if="noMessage" class="text-red">Message needed</p>
+
         <div class="mt-4">
+          <p v-if="noMessage" class="text-red text-xs">Message needed</p>
           <p>Message</p>
           <textarea
             v-model="message"
@@ -60,7 +63,7 @@
               border-solid border-2 border-red
               rounded-md
               focus:outline-none
-              w-80
+              w-96
               h-28
               resize-none
               px-2
@@ -83,7 +86,7 @@
               bg-red-light
               border-solid border-red border-2
               py-2
-              px-14
+              px-20
               rounded-md
               focus:outline-none
             "
@@ -109,7 +112,7 @@ export default {
       noName: false,
       noEmail: false,
       noMessage: false,
-      notEmail: false,
+      notEmail: true,
     };
   },
 
@@ -124,7 +127,7 @@ export default {
       ) {
         info = {
           name: this.name,
-          email: this.email,
+          number: this.email,
           message: this.message,
         };
       }
@@ -137,9 +140,6 @@ export default {
       if (this.email == "") {
         this.noEmail = true;
         this.notEmail = false;
-      } else if (!validator.validate(this.email)) {
-        this.notEmail = true;
-        this.noName = false;
       } else {
         this.noEmail = false;
         this.notEmail = false;
@@ -150,15 +150,6 @@ export default {
       } else {
         this.noMessage = false;
       }
-
-      axios
-        .post("http://localhost:4000/send/email", info)
-        .then((res) => {
-          console.log(res);
-        })
-        .catch((err) => {
-          console.log(err);
-        });
     },
   },
 };
