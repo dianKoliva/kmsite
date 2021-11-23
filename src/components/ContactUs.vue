@@ -102,16 +102,40 @@ export default {
       name: "",
       email: "",
       message: "",
+      noName: false,
+      noEmail: false,
+      noMessage: false,
     };
   },
 
   methods: {
     submit() {
-      const info = {
-        name: this.name,
-        email: this.email,
-        message: this.message,
-      };
+      let info = {};
+      if (this.name != "" && this.email != "" && this.message != "") {
+        info = {
+          name: this.name,
+          email: this.email,
+          message: this.message,
+        };
+      }
+      if (this.name == "") {
+        this.noName = true;
+      } else {
+        this.noName = false;
+      }
+
+      if (this.email == "") {
+        this.noEmail = true;
+      } else {
+        this.noName = false;
+      }
+
+      if (this.message == "") {
+        this.noMessage = true;
+      } else {
+        this.noMessage = false;
+      }
+
       axios
         .post("http://localhost:4000/send/email", info)
         .then((res) => {
