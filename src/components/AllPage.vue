@@ -2,28 +2,141 @@
   <div class="holder">
     <!-- <div class="">KM</div> -->
     <div class="">
-      <Nav></Nav>
+      <div class="bg-no-repeat bg-right-top bg-">
+        <div class="flex pb-4 pt-2">
+          <div class="pt-8 pl-20 font-display text-3xl text-red">KM</div>
+          <div class="holder absolute right-0 pt-10 pr-8">
+            <div class="flex text-sm">
+              <a href="#">
+                <p
+                  class="
+                    transition
+                    duration-500
+                    ease-in-out
+                    mr-16
+                    hover:border-red hover:border-solid
+                    border-white border-b-2
+                    hover:border-b-2
+                    cursor-pointer
+                  "
+                >
+                  Home
+                </p>
+              </a>
+
+              <a href="#about">
+                <p
+                  class="
+                    transition
+                    duration-500
+                    ease-in-out
+                    mr-16
+                    hover:border-red hover:border-solid
+                    border-white border-b-2
+                    hover:border-b-2
+                    cursor-pointer
+                  "
+                >
+                  About
+                </p>
+              </a>
+
+              <a href="services">
+                <p
+                  class="
+                    transition
+                    duration-500
+                    ease-in-out
+                    mr-16
+                    hover:border-red hover:border-solid
+                    border-white border-b-2
+                    hover:border-b-2
+                    cursor-pointer
+                  "
+                >
+                  Services
+                </p>
+              </a>
+              <a href="#contact">
+                <p
+                  class="
+                    transition
+                    duration-500
+                    ease-in-out
+                    mr-16
+                    hover:border-red hover:border-solid
+                    border-white border-b-2
+                    hover:border-b-2
+                    cursor-pointer
+                  "
+                >
+                  Contact Us
+                </p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <div class="pt-20">
+    <div class="pt-20" id="home">
       <Home></Home>
     </div>
-    <div>
+    <div id="about">
       <AboutUs></AboutUs>
     </div>
-    <div>
+    <div id="services">
       <Services></Services>
     </div>
 
-    <div>
+    <div id="client">
       <Clients></Clients>
     </div>
 
-    <div>
+    <div id="contact">
       <ContactUs></ContactUs>
     </div>
 
-    <div><Footer></Footer></div>
+    <div>
+      <div class="bg-red text-white relative w-full bottom-0">
+        <div class="flex">
+          <div
+            class="
+              mr-auto
+              cursor-pointer
+              ml-auto
+              flex
+              text-sm
+              pt-6
+              font-light
+              pb-4
+            "
+          >
+            <a href="#">
+              <p class="mr-8 cursor-pointer">Home</p>
+            </a>
+
+            <a href="#about">
+              <p class="mr-8 cursor-pointer">About</p>
+            </a>
+
+            <a href="#services">
+              <p class="mr-8 cursor-pointer">Services</p>
+            </a>
+
+            <a href="#contact">
+              <p class="mr-8 cursor-pointer">Contact Us</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="text-center pb-2">
+          <i class="fa fa-instagram cursor-pointer text-2xl mr-6"></i>
+          <i class="fa fa-twitter cursor-pointer text-2xl mr-6"></i>
+          <i class="fa fa-linkedin cursor-pointer text-2xl mr-6"></i>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
