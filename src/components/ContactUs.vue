@@ -112,7 +112,14 @@ export default {
         email: this.email,
         message: this.message,
       };
-      axios.post("http://localhost:5000/send/email");
+      axios
+        .post("http://localhost:5000/send/email", info)
+        .then((res) => {
+          console.log(res);
+        })
+        .catch((err) => {
+          console.log(err);
+        });
     },
   },
 };
