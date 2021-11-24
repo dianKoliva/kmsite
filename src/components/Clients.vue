@@ -8,7 +8,7 @@
         v-if="show == 1"
         class="flex mt-10 pb-6"
         data-aos="fade-left"
-        data-aos-duration="900"
+        data-aos-duration="3000"
       >
         <div class="w-72 ml-20 mt-10 text-sm">
           <img
