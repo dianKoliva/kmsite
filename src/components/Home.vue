@@ -1,19 +1,11 @@
 <template>
   <div class="flex">
     <div class="w-1/2">
-      <div class="ml-20 w-4/5">
-        <h1
-          class="font-bold text-3xl mb-4 text-red"
-          data-aos="fade-right"
-          data-aos-duration="3000"
-        >
+      <div class="ml-20 w-4/5" data-aos="fade-right" data-aos-duration="3000">
+        <h1 class="font-bold text-3xl mb-4 text-red">
           BEST CHASSIS REPAIRING COMPANY IN RWANDA
         </h1>
-        <p
-          class="leading-7 text-sm"
-          data-aos="fade-right"
-          data-aos-duration="3000"
-        >
+        <p class="leading-7 text-sm">
           Koliva Motors is the best chassis repairing company in the country .We
           make your car brand new and you got to testify the we got the best
           customer service. You can book a mechanic, get a preform or get a car
