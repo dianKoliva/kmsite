@@ -1,7 +1,12 @@
 <template>
   <div class="flex mb-6 mt-6">
-    <div class="w-1/2">
-      <img src="/contact.png" class="max-w-md" alt="" />
+    <div
+      class="w-1/2"
+      data-aos="fade-right"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="3000"
+    >
+      <img src="/contact.png" class="max-w-md ml-16 mt-8" alt="" />
     </div>
 
     <div class="w-1/2">
@@ -103,7 +108,11 @@
 <script>
 import axios from "axios";
 import validator from "email-validator";
+import AOS from "aos";
 export default {
+  created() {
+    AOS.init();
+  },
   data() {
     return {
       name: "",
