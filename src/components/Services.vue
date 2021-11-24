@@ -5,7 +5,7 @@
         class="ml-24 w-96"
         data-aos="fade-right"
         data-aos-easing="ease-out-cubic"
-        data-aos-duration="900"
+        data-aos-duration="3000"
       >
         <h1 class="text-xl text-red font-extrabold mt-10">
           SERVICES WE CAN HELP YOU WITH
@@ -17,7 +17,7 @@
         </p>
       </div>
     </div>
-    <div class="w-1/2 flex" data-aos="zoom-in" data-aos-duration="900">
+    <div class="w-1/2 flex" data-aos="zoom-in" data-aos-duration="3000">
       <div class="mt-12 ml-8">
         <div class="bg-red-lighter w-40 text-center rounded-lg shadow-lg">
           <i class="fa fa-truck text-red text-2xl pt-4"></i>
