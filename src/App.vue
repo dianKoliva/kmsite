@@ -9,9 +9,10 @@
   <router-view></router-view>
 </template>
 
-<script>
-AOS.init();
-export default {};
+// <script>
+// AOS.init();
+// export default {};
+//
 </script>
 
 <style>
