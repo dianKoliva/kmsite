@@ -1,6 +1,6 @@
 <template>
   <div class="flex pb-10 mt-16">
-    <div class="w-1/2 mt-32">
+    <div class="w-1/2 mt-20">
       <div class="ml-24 w-96">
         <h1 class="text-xl text-red font-extrabold mt-10">
           SERVICES WE CAN HELP YOU WITH
