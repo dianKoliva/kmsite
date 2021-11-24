@@ -4,7 +4,12 @@
       Our Clients Speak
     </p>
     <div>
-      <div v-if="show == 1" class="flex mt-10 pb-6">
+      <div
+        v-if="show == 1"
+        class="flex mt-10 pb-6"
+        data-aos="fade-left"
+        data-aos-duration="900"
+      >
         <div class="w-72 ml-20 mt-10 text-sm">
           <img
             src="/three.jpg"
@@ -43,7 +48,12 @@
         </div>
       </div>
 
-      <div v-else class="flex mt-10 pb-6">
+      <div
+        v-else
+        class="flex mt-10 pb-6"
+        data-aos="fade-left"
+        data-aos-duration="900"
+      >
         <div class="w-72 ml-20 mt-10 text-sm">
           <img
             src="/12.jpg"
@@ -91,6 +101,7 @@
 
 <script>
 import { ref } from "@vue/reactivity";
+import AOS from "aos";
 export default {
   setup() {
     let show = ref(1);
@@ -109,6 +120,9 @@ export default {
       show,
       onChange,
     };
+  },
+  created() {
+    AOS.init();
   },
 };
 </script>
