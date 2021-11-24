@@ -18,20 +18,23 @@
           >
             Home
           </p>
-          <p
-            class="
-              transition
-              duration-500
-              ease-in-out
-              mr-16
-              hover:border-red hover:border-solid
-              border-white border-b-2
-              hover:border-b-2
-              cursor-pointer
-            "
-          >
-            About
-          </p>
+          <a href="#about">
+            <p
+              class="
+                transition
+                duration-500
+                ease-in-out
+                mr-16
+                hover:border-red hover:border-solid
+                border-white border-b-2
+                hover:border-b-2
+                cursor-pointer
+              "
+            >
+              About
+            </p>
+          </a>
+
           <p
             class="
               transition
