@@ -74,6 +74,7 @@ import Services from "./Services.vue";
 import Clients from "./Clients.vue";
 import ContactUs from "./ContactUs.vue";
 import Footer from "./Footer.vue";
+import AOS from "aos";
 export default {
   name: "ALl",
   components: { Nav, Home, AboutUs, Services, Clients, ContactUs, Footer },
