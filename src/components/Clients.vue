@@ -74,7 +74,7 @@
         </div>
       </div>
 
-      <div class="content-center pb-4">
+      <div class="ml-96 pl-52 pb-4">
         <input type="radio" @change="onChange(1)" name="change" id="" />
 
         <input
@@ -82,7 +82,7 @@
           @change="onChange(2)"
           name="change"
           id=""
-          class="ml-1"
+          class="ml-4"
         />
       </div>
     </div>
