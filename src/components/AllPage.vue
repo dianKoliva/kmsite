@@ -78,6 +78,9 @@ import AOS from "aos";
 export default {
   name: "ALl",
   components: { Nav, Home, AboutUs, Services, Clients, ContactUs, Footer },
+  created() {
+    AOS.init();
+  },
 };
 </script>
 
