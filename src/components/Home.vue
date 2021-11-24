@@ -2,10 +2,18 @@
   <div class="flex">
     <div class="w-1/2">
       <div class="ml-20 w-4/5">
-        <h1 class="font-bold text-3xl mb-4 text-red">
+        <h1
+          class="font-bold text-3xl mb-4 text-red"
+          data-aos="fade-right"
+          data-aos-duration="3000"
+        >
           BEST CHASSIS REPAIRING COMPANY IN RWANDA
         </h1>
-        <p class="leading-7 text-sm">
+        <p
+          class="leading-7 text-sm"
+          data-aos="fade-right"
+          data-aos-duration="3000"
+        >
           Koliva Motors is the best chassis repairing company in the country .We
           make your car brand new and you got to testify the we got the best
           customer service. You can book a mechanic, get a preform or get a car
@@ -14,6 +22,8 @@
         </p>
         <a href="#contact">
           <button
+            data-aos="fade-right"
+            data-aos-duration="3000"
             class="
               transition
               duration-500
@@ -43,7 +53,12 @@
 </template>
 
 <script>
-export default {};
+import AOS from "aos";
+export default {
+  created() {
+    AOS.init();
+  },
+};
 </script>
 
 <style scoped>
