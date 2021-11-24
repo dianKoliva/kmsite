@@ -53,7 +53,7 @@
           <p class="text-center pt-1 pb-2">Ngenzi David</p>
           <span class="">
             “If you are looking for the best garage to get your car chassis
-            repaired, think of Koliva Motors“
+            repaired, think of Koliva Motors “
           </span>
         </div>
         <div class="w-72 ml-24 mt-10 text-sm">
